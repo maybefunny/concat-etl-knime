@@ -16,31 +16,32 @@ In this project, we use chess game records from Lichess.org as the dataset. Proc
 - Number of rows: 20058
 - Number of columns: 16
 
-1. Id: Game identifier;
-2. Rated: Wether the game is rated or not;
-3. Created_at: Start time;
-4. Last_move_at: End Time;
-5. Turns: Number of turns;
-6. Victory_status: Game status;
-7. Winner: wether black or white;
-8. Increment_code: Time increment mode;
-9. White_id: White player identifier;
-10. White_rating: White player rating;
-11. Black_id: Black player identifier;
-12. Black_rating: Black player rating;
-13. Moves: All Moves in Standard Chess Notation;
-14. Opening_eco: Standardised Code for any given opening, [(list here)](https://www.365chess.com/eco.php);
-15. Opening_name: Opening Name;
-16. Opening_ply: Number of moves in the opening phase;
+### Columns detail
+1. **Id**: Game identifier;
+2. **Rated**: Wether the game is rated or not;
+3. **Created_at**: Start time;
+4. **Last_move_at**: End Time;
+5. **Turns**: Number of turns;
+6. **Victory_status**: Game status;
+7. **Winner**: wether black or white;
+8. **Increment_code**: Time increment mode;
+9. **White_id**: White player identifier;
+10. **White_rating**: White player rating;
+11. **Black_id**: Black player identifier;
+12. **Black_rating**: Black player rating;
+13. **Moves**: All Moves in Standard Chess Notation;
+14. **Opening_eco**: Standardised Code for any given opening, [(list here)](https://www.365chess.com/eco.php);
+15. **Opening_name**: Opening Name;
+16. **Opening_ply**: Number of moves in the opening phase;
 
 ## Data Preparation
 
 The dataset will be splitted into 2 part, the 19058 first rows will still be CSV file, and the rest rows will be JSON file.
 
-1. Move the 2nd part (100 rows) of dataset to new CSV file.
+1. Use text editor to move the 2nd part (100 rows) of dataset to new CSV file.
 2. Save the 1st part (19058 rows) of dataset to new CSV file
-3. Use online converter to convert 2nd part of dataset from CSV into JSON.
-4. Download the converter result.
+3. Use online converter ([CSV to JSON](https://www.csvjson.com/csv2json)) to convert 2nd part of dataset from CSV into JSON.
+4. Download the converter result as JSON file.
 
 ## Modeling
 
